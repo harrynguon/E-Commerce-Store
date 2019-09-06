@@ -17,10 +17,16 @@ import PineapplesImage from './stock_photos/pineapples.jpeg';
 import RaspberriesImage from './stock_photos/raspberries.jpg';
 import StrawberriesImage from './stock_photos/strawberries.jpg';
 
+import M from 'materialize-css';
+
+const showToast = () => {
+    M.toast({html: 'I am a toast'});
+}
+
 export const getImage = (imageText) => {
     switch (imageText) {
         case 'apples':
-            return <img src={ApplesImage} alt={imageText} />;
+            return <img onClick={showToast} src={ApplesImage} alt={imageText} />;
         case 'bananas':
             return <img src={BananasImage} alt={imageText} />;
         case 'blueberries':

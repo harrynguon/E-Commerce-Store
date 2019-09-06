@@ -10,11 +10,11 @@ const Item = (props) => {
         <div className="col s12 m4 l4">
             <div className="card">
                 <Link to="/" className="black-text">
-                    <div class="card-image">
+                    <div className="card-image">
                         { getImage(props.item.imageName) }
                     </div>
                     <div className="card-content">
-                    <span class="card-title">{props.item.name}</span>
+                    <span className="card-title">{props.item.name}</span>
                         <p>
                             Price: {props.item.price}
                             <br></br>
@@ -23,7 +23,7 @@ const Item = (props) => {
                     </div>
                 </Link>
                 <div className="card-action">
-                    <button className="btn white black-text">Add To Cart</button>
+                    <button className="btn white black-text waves-effect">Add To Cart</button>
                 </div>
             </div>
         </div>

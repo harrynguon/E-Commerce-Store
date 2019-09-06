@@ -10,7 +10,6 @@ import rootReducer from './reducers/rootReducer';
 
 import { initialInventory } from './data/initialStoreInventory';
 
-
 const initialStoreState = {
     inventory: initialInventory,
     shoppingCart: []

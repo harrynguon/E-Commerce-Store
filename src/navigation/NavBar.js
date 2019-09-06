@@ -7,7 +7,7 @@ const NavBar = () => {
         <nav>
             <div className="nav-wrapper white">
                 <div className="container">
-                    <Link to="/" className="brand-logo black-text">Organic Fruit Market</Link>
+                    <Link to="/" className="brand-logo black-text">Organic Fruit Market&trade;</Link>
                     <ul className="right hide-on-med-and-down">
                         <li>
                             <Link to="/" className="black-text">About</Link>
