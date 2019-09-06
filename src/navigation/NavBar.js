@@ -15,7 +15,7 @@ const NavBar = () => {
                         </li>
                         <li>
                             <Link to="/" className="black-text">
-                                <i class="material-icons">shopping_cart</i>
+                                <i className="material-icons">shopping_cart</i>
                             </Link>
                         </li>
                     </ul>

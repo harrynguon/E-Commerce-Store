@@ -9,6 +9,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <NavBar />
+        <div className="section"></div>
         <Switch>
           <Route exact path="/" component={Home} />
         </Switch>

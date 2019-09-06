@@ -6,10 +6,12 @@ import Item from './Item';
 const Home = (props) => {
   return (
     <div className="container">
-      { 
-          props.inventory
-                .map(item => <Item item={item} />)
-      }
+        <div className="row">
+            { 
+                props.inventory
+                        .map(item => <Item item={item} key={item.id} />)
+            }
+        </div>
     </div>
   );
 }

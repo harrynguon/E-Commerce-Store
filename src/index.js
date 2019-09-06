@@ -8,8 +8,17 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import rootReducer from './reducers/rootReducer';
 
+const initialInventory = [];
+for (let i = 0; i < 24; i++) {
+    initialInventory.push({
+        id: i+1,
+        name: `Item ${i+1}`,
+        price: i,
+        stockCount: Math.floor(Math.random()*100)
+    })
+}
 const initialStoreState = {
-    inventory: [],
+    inventory: initialInventory,
     shoppingCart: []
 };
 const store = createStore(rootReducer, initialStoreState);
