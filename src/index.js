@@ -8,7 +8,10 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import rootReducer from './reducers/rootReducer';
 
-const initialStoreState = {};
+const initialStoreState = {
+    inventory: [],
+    shoppingCart: []
+};
 const store = createStore(rootReducer, initialStoreState);
 
 ReactDOM.render(
