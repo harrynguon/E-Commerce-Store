@@ -17,44 +17,39 @@ import PineapplesImage from './stock_photos/pineapples.jpeg';
 import RaspberriesImage from './stock_photos/raspberries.jpg';
 import StrawberriesImage from './stock_photos/strawberries.jpg';
 
-import M from 'materialize-css';
-
-const showToast = () => {
-    M.toast({html: 'I am a toast'});
-}
-
-export const getImage = (imageText) => {
-    switch (imageText) {
-        case 'apples':
-            return <img onClick={showToast} src={ApplesImage} alt={imageText} />;
-        case 'bananas':
-            return <img src={BananasImage} alt={imageText} />;
-        case 'blueberries':
-            return <img src={Blueberries} alt={imageText} />;
-        case 'cherries':
-            return <img src={CherriesImage} alt={imageText} />;
-        case 'kiwifruit':
-            return <img src={KiwifruitImage} alt={imageText} />;
-        case 'mandarins':
-            return <img src={MandarinsImage} alt={imageText} />;
-        case 'mangos':
-            return <img src={MangosImage} alt={imageText} />;
-        case 'mixedApples':
-            return <img src={MixedApplesImage} alt={imageText} />;
-        case 'mixedBerries':
-            return <img src={MixedBerriesImage} alt={imageText} />;
-        case 'oranges':
-            return <img src={OrangesImage} alt={imageText} />;
-        case 'peaches':
-            return <img src={PeachesImage} alt={imageText} />;
-        case 'pears':
-            return <img src={PearsImage} alt={imageText} />;
-        case 'pineapples':
-            return <img src={PineapplesImage} alt={imageText} />;
-        case 'raspberries':
-            return <img src={RaspberriesImage} alt={imageText} />;
-        case 'strawberries':
-            return <img src={StrawberriesImage} alt={imageText} />;
+// Grab a fruit's image from its name
+export const getImage = (fruitName) => {
+    switch (fruitName) {
+        case 'Apples':
+            return <img src={ApplesImage} width="300px" alt={fruitName} />;
+        case 'Bananas':
+            return <img src={BananasImage} alt={fruitName} />;
+        case 'Blueberries':
+            return <img src={Blueberries} alt={fruitName} />;
+        case 'Cherries':
+            return <img src={CherriesImage} alt={fruitName} />;
+        case 'Kiwifruit':
+            return <img src={KiwifruitImage} alt={fruitName} />;
+        case 'Mandarins':
+            return <img src={MandarinsImage} alt={fruitName} />;
+        case 'Mangos':
+            return <img src={MangosImage} alt={fruitName} />;
+        case 'Assorted Apples':
+            return <img src={MixedApplesImage} alt={fruitName} />;
+        case 'Assorted Berries':
+            return <img src={MixedBerriesImage} alt={fruitName} />;
+        case 'Oranges':
+            return <img src={OrangesImage} alt={fruitName} />;
+        case 'Peaches':
+            return <img src={PeachesImage} alt={fruitName} />;
+        case 'Pears':
+            return <img src={PearsImage} alt={fruitName} />;
+        case 'Pineapples':
+            return <img src={PineapplesImage} alt={fruitName} />;
+        case 'Raspberries':
+            return <img src={RaspberriesImage} alt={fruitName} />;
+        case 'Strawberries':
+            return <img src={StrawberriesImage} alt={fruitName} />;
         default:
             return <img src={ApplesImage} alt="Item not found, using apples instead" />;
     }
