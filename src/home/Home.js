@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import Item from './Item';
+import { addToCart } from '../actions/addToCart';
 
 const Home = (props) => {
   return (
@@ -9,7 +10,7 @@ const Home = (props) => {
         <div className="row">
             { 
                 props.inventory
-                        .map(item => <Item item={item} key={item.id} />)
+                     .map(item => <Item item={item} key={item.id} addToCart={props.addToCart}/>)
             }
         </div>
     </div>
@@ -22,4 +23,10 @@ const mapStateToProps = (reducer) => {
     }
 } 
 
-export default connect(mapStateToProps)(Home);
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addToCart: (fruitName) => dispatch(addToCart(fruitName))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

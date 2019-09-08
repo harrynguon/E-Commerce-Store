@@ -23,34 +23,34 @@ export const getImage = (fruitName) => {
         case 'Apples':
             return <img src={ApplesImage} width="300px" alt={fruitName} />;
         case 'Bananas':
-            return <img src={BananasImage} alt={fruitName} />;
+            return <img src={BananasImage} width="300px" alt={fruitName} />;
         case 'Blueberries':
-            return <img src={Blueberries} alt={fruitName} />;
+            return <img src={Blueberries} width="300px" alt={fruitName} />;
         case 'Cherries':
-            return <img src={CherriesImage} alt={fruitName} />;
+            return <img src={CherriesImage} width="300px" alt={fruitName} />;
         case 'Kiwifruit':
-            return <img src={KiwifruitImage} alt={fruitName} />;
+            return <img src={KiwifruitImage} width="300px" alt={fruitName} />;
         case 'Mandarins':
-            return <img src={MandarinsImage} alt={fruitName} />;
+            return <img src={MandarinsImage} width="300px" alt={fruitName} />;
         case 'Mangos':
-            return <img src={MangosImage} alt={fruitName} />;
+            return <img src={MangosImage} width="300px" alt={fruitName} />;
         case 'Assorted Apples':
-            return <img src={MixedApplesImage} alt={fruitName} />;
+            return <img src={MixedApplesImage} width="300px" alt={fruitName} />;
         case 'Assorted Berries':
-            return <img src={MixedBerriesImage} alt={fruitName} />;
+            return <img src={MixedBerriesImage} width="300px" alt={fruitName} />;
         case 'Oranges':
-            return <img src={OrangesImage} alt={fruitName} />;
+            return <img src={OrangesImage} width="300px" alt={fruitName} />;
         case 'Peaches':
-            return <img src={PeachesImage} alt={fruitName} />;
+            return <img src={PeachesImage} width="300px" alt={fruitName} />;
         case 'Pears':
-            return <img src={PearsImage} alt={fruitName} />;
+            return <img src={PearsImage} width="300px" alt={fruitName} />;
         case 'Pineapples':
-            return <img src={PineapplesImage} alt={fruitName} />;
+            return <img src={PineapplesImage} width="300px" alt={fruitName} />;
         case 'Raspberries':
-            return <img src={RaspberriesImage} alt={fruitName} />;
+            return <img src={RaspberriesImage} width="300px" alt={fruitName} />;
         case 'Strawberries':
-            return <img src={StrawberriesImage} alt={fruitName} />;
+            return <img src={StrawberriesImage} width="300px" alt={fruitName} />;
         default:
-            return <img src={ApplesImage} alt="Item not found, using apples instead" />;
+            return <img src={ApplesImage} width="300px" alt="Item not found, using apples instead" />;
     }
 }

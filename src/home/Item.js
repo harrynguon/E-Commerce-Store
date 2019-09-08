@@ -16,7 +16,6 @@ const showToast = (itemName) => {
 
 const Item = (props) => {
     // id, name, price, stockCount
-    /** <div className={props.item.id % 3 === 0 ? "row col" : "col"}> */
     const addToCartText = props.item.name === 'Pineapples'
                                                 ? 'Add To Cart (One Pineapple)'
                                                 : 'Add To Cart (100g)';
@@ -28,7 +27,7 @@ const Item = (props) => {
                         { getImage(props.item.name) }
                     </div>
                     <div className="card-content">
-                    <span className="card-title">{props.item.name}</span>
+                        <span className="card-title">{props.item.name}</span>
                         <p>
                             Price: {props.item.price}
                             <br></br>
@@ -38,10 +37,14 @@ const Item = (props) => {
                 </Link>
                 <div className="card-action">
                     <button className="btn white black-text waves-effect" 
-                            onClick={() => showToast(props.item.name)}
-                            >
-                                {addToCartText}
-                            </button>
+                            onClick={() => { 
+                                            showToast(props.item.name);
+                                            props.addToCart(props.item.name);
+                                        }
+                                    }
+                    >
+                        {addToCartText}
+                    </button>
                 </div>
             </div>
         </div>
