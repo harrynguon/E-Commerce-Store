@@ -6,7 +6,7 @@ const ShoppingCart = (props) => {
     const shoppingCart = props.shoppingCart;
 	return (
 		<div className="container">
-            <h1>This is the shopping cart page!</h1>
+            <div className="flow-text">This is the shopping cart page!</div>
             <ul className="collection">
                 <ShoppingCartElement shoppingCart={shoppingCart} />
             </ul>
