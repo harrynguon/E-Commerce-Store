@@ -1,7 +1,7 @@
 const rootReducer = (state, action) => {
+    let shoppingCartCopy = state.shoppingCart.concat();
     switch (action.type) {
         case 'ADD_FRUIT_TO_CART':
-            let shoppingCartCopy = state.shoppingCart.concat();
             // Check to see if the shopping cart already has the fruit or not. If so, add to it
             if (shoppingCartCopy.find(item => item.name === action.fruitName)) {
                 shoppingCartCopy = shoppingCartCopy
@@ -18,6 +18,14 @@ const rootReducer = (state, action) => {
                     amount: 1
                 });
             }
+            // Sort the list by name
+            shoppingCartCopy = shoppingCartCopy.sort((a, b) => a.name.localeCompare(b.name))
+            return {
+                ...state,
+                shoppingCart: shoppingCartCopy
+            };
+        case 'DELETE_FRUIT_FROM_CART':
+            shoppingCartCopy = shoppingCartCopy.filter(item => item.name !== action.fruitName);
             return {
                 ...state,
                 shoppingCart: shoppingCartCopy
