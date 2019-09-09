@@ -8,10 +8,10 @@ const FruitDetail = (props) => {
     return (
         <div className="container">
             <div className="row center">
-                <div className="col s12 m4 l4">
+                <div className="col s12 m12 l6">
                     { getImage(fruitName) }
                 </div>
-                <div className="col s12 m8 l8">
+                <div className="col s12 m12 l6">
                     <h1>{ fruitName }</h1>
                     <div className="divider"></div>
                     <p>are awesome.</p>

@@ -20,16 +20,17 @@ const ShoppingCart = (props) => {
                 
             </ul>
             <div>
-                <Link to="/">
-                    <button className="btn-flat left">Continue Shopping</button>
-                </Link>
                 <Link to="/checkout">
                     <button disabled={props.shoppingCart.length === 0}
-                            className="btn-flat right"
+                            className="btn white black-text right"
                     >
                         Checkout
                     </button>
                 </Link> 
+                <Link to="/">
+                    <button className="btn white black-text right">Continue Shopping</button>
+                </Link>
+                
             </div>
             
 		</div>

@@ -37,49 +37,55 @@ export const initialInventory = [
     },
     {
         id: 6,
+        name: 'Grapes',
+        price: '7.50',
+        stockCount: '7000g'
+    },
+    {
+        id: 7,
         name: 'Kiwifruit',
         price: '5',
         stockCount: '10kg'
     },
     {
-        id: 7,
+        id: 8,
         name: 'Mandarins',
         price: '4.50',
         stockCount: '10kg'
     },
     {
-        id: 8,
+        id: 9,
         name: 'Mangos',
         price: '6',
         stockCount: '50kg'
     },
     
     {
-        id: 9,
+        id: 10,
         name: 'Oranges',
         price: '3',
         stockCount: '25kg'
     },
     {
-        id: 10,
+        id: 11,
         name: 'Peaches',
         price: '5',
         stockCount: '20kg'
     },
     {
-        id: 11,
+        id: 12,
         name: 'Pears',
         price: '2.25',
         stockCount: '12kg'
     },
     {
-        id: 12,
+        id: 13,
         name: 'Raspberries',
         price: '12.50',
         stockCount: '2500g'
     },
     {
-        id: 13,
+        id: 14,
         name: 'Strawberries',
         price: '9',
         stockCount: '10kg'

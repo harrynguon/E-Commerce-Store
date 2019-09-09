@@ -71,15 +71,16 @@ class Checkout extends React.Component {
                         
                         <div className="row">
                             <div>
-                                <Link to="/shoppingcart">
-                                    <button className="btn-flat left">Go Back</button>
-                                </Link>
                                 <button type="button" 
-                                        className="btn-flat right tooltipped" 
+                                        className="btn white right black-text tooltipped" 
                                         ref="tooltip"
                                 >
-                                    Checkout
+                                    Confirm
                                 </button>
+                                <Link to="/shoppingcart">
+                                    <button className="btn white right black-text">Go Back</button>
+                                </Link>
+                                
                             </div>
                         </div>
                     </form>

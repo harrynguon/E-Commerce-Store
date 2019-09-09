@@ -10,7 +10,7 @@ const Item = (props) => {
     // id, name, price, stockCount
     return (
         <div className="col s12 m4 l4">
-            <div className="card hoverable">
+            <div className="card hoverable large">
                 <Link to={`/fruit/${props.item.name}`} className="black-text">
                     <div className="card-image">
                         { getImage(props.item.name) }
