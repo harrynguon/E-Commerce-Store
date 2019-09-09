@@ -8,6 +8,7 @@ const rootReducer = (state, action) => {
                                             .map(item => item.name === action.fruitName
                                                                             ? {
                                                                                 name: action.fruitName,
+                                                                                price: action.fruitPrice,
                                                                                 amount: item.amount + 1
                                                                             }
                                                                             : item);
@@ -15,6 +16,7 @@ const rootReducer = (state, action) => {
                 // Otherwise create a new fruit entry with an amount of 1
                 shoppingCartCopy.push({
                     name: action.fruitName,
+                    price: action.fruitPrice,
                     amount: 1
                 });
             }

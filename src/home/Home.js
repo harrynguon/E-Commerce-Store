@@ -25,7 +25,7 @@ const mapStateToProps = (reducer) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        addToCart: (fruitName) => dispatch(addToCart(fruitName))
+        addToCart: (fruitName, fruitPrice) => dispatch(addToCart(fruitName, fruitPrice))
     }
 }
 

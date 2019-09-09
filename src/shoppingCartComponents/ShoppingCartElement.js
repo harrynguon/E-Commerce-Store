@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {  } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import M from 'materialize-css';
 
 import { deleteFromCart } from '../actions/deleteFromCart';
@@ -18,6 +18,7 @@ const showToast = (itemName) => {
 
 const ShoppingCartElement = (props) => {
     const shoppingCart = props.shoppingCart;
+    const inventory = props.inventory;
     const allShoppingItems = shoppingCart.length > 0 
         ? shoppingCart.map(item =>
             <li className="collection-item" key={item.name}>
@@ -34,6 +35,8 @@ const ShoppingCartElement = (props) => {
                     </button>
                     <br></br>
                     { item.amount } x { item.name === 'Pineapples' ? 'pineapple(s)' : '100g' } 
+                    <br></br>
+                    $<i>{ getPrice(item.name, item.amount, inventory) }</i>
                 </p>
             </li>
         ) 
@@ -43,6 +46,13 @@ const ShoppingCartElement = (props) => {
     return (
         allShoppingItems
     );
+}
+
+// Grab the item from the inventory given the name of the item in the shopping cart
+// Then get its price with the number of units given
+const getPrice = (itemName, amount, inventory) => {
+    const inventoryItem = inventory.filter(item => itemName === item.name)[0];
+    return inventoryItem.price * amount;
 }
 
 const mapDispatchToProps = (dispatch) => {

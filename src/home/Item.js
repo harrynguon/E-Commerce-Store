@@ -29,7 +29,7 @@ const Item = (props) => {
                     <div className="card-content">
                         <span className="card-title">{props.item.name}</span>
                         <p>
-                            Price: {props.item.price}
+                            Price: ${props.item.price}/{props.item.name==='Pineapples' ? 'each' : '100g'}
                             <br></br>
                             Stock Count: {props.item.stockCount}
                         </p>
@@ -39,7 +39,7 @@ const Item = (props) => {
                     <button className="btn white black-text waves-effect" 
                             onClick={() => { 
                                             showToast(props.item.name);
-                                            props.addToCart(props.item.name);
+                                            props.addToCart(props.item.name, props.item.price);
                                         }
                                     }
                     >

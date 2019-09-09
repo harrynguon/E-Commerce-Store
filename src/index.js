@@ -9,10 +9,11 @@ import { Provider } from 'react-redux';
 import rootReducer from './reducers/rootReducer';
 
 import { initialInventory } from './data/initialStoreInventory';
+import { initialShoppingCart } from './data/initialShoppingCart';
 
 const initialStoreState = {
     inventory: initialInventory,
-    shoppingCart: []
+    shoppingCart: initialShoppingCart
 };
 const store = createStore(rootReducer, initialStoreState);
 
