@@ -18,14 +18,14 @@ const Item = (props) => {
                     <div className="card-content">
                         <span className="card-title">{props.item.name}</span>
                         <p>
-                            Price: ${props.item.price}/{props.item.name==='Pineapples' ? 'each' : '100g'}
+                            Price: ${props.item.price}/100g
                             <br></br>
                             Stock Count: {props.item.stockCount}
                         </p>
                     </div>
                 </Link>
                 <div className="card-action">
-                    <AddFruitModal fruit={ props.item } addToCart={props.addToCart} />
+                    <AddFruitModal fruit={props.item} addToCart={props.addToCart} />
                 </div>
             </div>
         </div>

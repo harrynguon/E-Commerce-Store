@@ -9,7 +9,7 @@ const rootReducer = (state, action) => {
                                                                             ? {
                                                                                 name: action.fruitName,
                                                                                 price: action.fruitPrice,
-                                                                                amount: item.amount + 1
+                                                                                amount: item.amount + Number(action.fruitAmount)
                                                                             }
                                                                             : item);
             } else {
@@ -17,7 +17,7 @@ const rootReducer = (state, action) => {
                 shoppingCartCopy.push({
                     name: action.fruitName,
                     price: action.fruitPrice,
-                    amount: 1
+                    amount: Number(action.fruitAmount)
                 });
             }
             // Sort the list by name

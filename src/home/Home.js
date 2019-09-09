@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 
 import Item from './Item';
 import { addToCart } from '../actions/addToCart';
-import AddFruitModal from './AddFruitModal';
 
 const Home = (props) => {
   return (
@@ -26,7 +25,7 @@ const mapStateToProps = (reducer) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        addToCart: (fruitName, fruitPrice) => dispatch(addToCart(fruitName, fruitPrice))
+        addToCart: (fruitName, fruitPrice, fruitAmount) => dispatch(addToCart(fruitName, fruitPrice, fruitAmount))
     }
 }
 

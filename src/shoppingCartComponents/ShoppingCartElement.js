@@ -4,8 +4,6 @@ import M from 'materialize-css';
 
 import { deleteFromCart } from '../actions/deleteFromCart';
 
-
-
 const showToast = (itemName) => {
     M.toast(
         {
@@ -33,7 +31,10 @@ const ShoppingCartElement = (props) => {
                         <i className="material-icons black-text">clear</i>
                     </button>
                     <br></br>
-                    { item.amount } x { item.name === 'Pineapples' ? 'pineapple(s)' : '100g' } 
+                    { item.amount >= 1000
+                                        ? (item.amount / 1000)+'kg'
+                                        : (item.amount)+'g'
+                    }
                     <br></br>
                     $<i>{ getPrice(item.name, item.amount, inventory) }</i>
                 </p>
@@ -43,6 +44,7 @@ const ShoppingCartElement = (props) => {
                 <p>Your shopping cart is empty. </p>
             </li>
     return (
+        
         allShoppingItems
     );
 }
@@ -51,7 +53,7 @@ const ShoppingCartElement = (props) => {
 // Then get its price with the number of units given
 const getPrice = (itemName, amount, inventory) => {
     const inventoryItem = inventory.filter(item => itemName === item.name)[0];
-    return inventoryItem.price * amount;
+    return inventoryItem.price * (amount / 100);
 }
 
 const mapDispatchToProps = (dispatch) => {

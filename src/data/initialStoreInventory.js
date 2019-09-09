@@ -74,18 +74,12 @@ export const initialInventory = [
     },
     {
         id: 12,
-        name: 'Pineapples',
-        price: '7',
-        stockCount: '100+'
-    },
-    {
-        id: 13,
         name: 'Raspberries',
         price: '12.50',
         stockCount: '2500g'
     },
     {
-        id: 14,
+        id: 13,
         name: 'Strawberries',
         price: '9',
         stockCount: '10kg'

@@ -5,11 +5,22 @@ class AddFruitModal extends React.Component {
 
     constructor(props) {
         super(props);
-        this.props = props;
+        // Value = amount in grams
+        this.state = {
+            value: '100'
+        };
+        this.handleChange = this.handleChange.bind(this);
     }
 
     componentDidMount() {
-        M.Modal.init(this.Modal, null);
+        M.Modal.init(this.refs.modal, null);
+        M.FormSelect.init(this.refs.select, null);
+    }
+
+    handleChange(e) {
+        this.setState({
+            value: String(e.target.value)
+        });
     }
 
     render() {
@@ -17,27 +28,44 @@ class AddFruitModal extends React.Component {
             <div>
                 {/** Trigger */}
                 <button data-target={`modal1-${this.props.fruit.name}`} 
-                        class="btn white black-text waves-effect modal-trigger"
+                        className="btn white black-text waves-effect modal-trigger"
                 >
                     Add To Cart
                 </button>
                 {/** Content */}
-                <div id={`modal1-${this.props.fruit.name}`} class="modal" ref={modal => this.Modal = modal}>
-                    <div class="modal-content">
-                        <h4>Add { this.props.fruit.name } To Your Cart?</h4>
-                        <p>A bunch of text</p>
+                <div id={`modal1-${this.props.fruit.name}`} className="modal" ref='modal'>
+
+                    <div className="modal-content">
+                        <h4>Add {this.props.fruit.name} To Your Cart?</h4>
+                        <div className="section"></div>
+
+                        {/** Select Input field */}
+                        <div className="input-field">
+                            <select ref="select" value={this.state.value} onChange={this.handleChange}>
+                                <option value="100">100g</option>
+                                <option value="200">200g</option>
+                                <option value="500">500g</option>
+                                <option value="1000">1kg</option>
+                            </select>
+                            <label>Amount in Grams</label>
+                        </div>
+
+                        <div className="section"></div>
+                        <div className="section"></div>
+                        <div className="section"></div>
                     </div>
-                    <div class="modal-footer">
-                        <a  href="#!" class="modal-close btn-flat black-text">Cancel</a>
-                        <a  href="#!" 
+                    
+                    <div className="modal-footer">
+                        <button className="modal-close btn-flat black-text">Cancel</button>
+                        <button
                             onClick={() => {
-                                showToast(this.props.fruit.name);
-                                this.props.addToCart(this.props.fruit.name, this.props.fruit.price)
+                                showToast(this.props.fruit.name, this.state.value);
+                                this.props.addToCart(this.props.fruit.name, this.props.fruit.price, this.state.value)
                             }} 
-                           class="modal-close btn-flat black-text"
+                            className="modal-close btn-flat black-text"
                         >
                            Add to Cart
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -45,10 +73,13 @@ class AddFruitModal extends React.Component {
     }
 }
 
-const showToast = (itemName) => {
+const showToast = (itemName, value) => {
+    const valueText = value === '1000' 
+                                ? '1kg' 
+                                : value + 'g';
     M.toast(
         {
-            html: `${itemName} have been added to your cart!`,
+            html: `${valueText} of ${itemName} has been added to your cart!`,
             displayLength: '1500'
         }
     );

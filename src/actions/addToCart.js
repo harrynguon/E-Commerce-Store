@@ -1,7 +1,8 @@
-export const addToCart = (fruitName, fruitPrice) => {
+export const addToCart = (fruitName, fruitPrice, fruitAmount) => {
     return {
         type: 'ADD_FRUIT_TO_CART',
         fruitName: fruitName,
-        fruitPrice: fruitPrice
+        fruitPrice: fruitPrice,
+        fruitAmount: fruitAmount
     };
 }
