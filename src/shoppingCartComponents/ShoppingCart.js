@@ -23,7 +23,13 @@ const ShoppingCart = (props) => {
                 <Link to="/">
                     <button className="btn-flat left">Continue Shopping</button>
                 </Link>
-                <button disabled={props.shoppingCart.length === 0} className="btn-flat right">Checkout</button>
+                <Link to="/checkout">
+                    <button disabled={props.shoppingCart.length === 0}
+                            className="btn-flat right"
+                    >
+                        Checkout
+                    </button>
+                </Link> 
             </div>
             
 		</div>
