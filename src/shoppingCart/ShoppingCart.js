@@ -39,8 +39,10 @@ const ShoppingCart = (props) => {
 
 // Grab the total of the shopping cart and then sum it up
 const getShoppingCartTotal = (shoppingCart) => {
-    return shoppingCart.map(item => Number(item.price) * (item.amount / 100))
-                        .reduce((a, b) => a + b, 0);
+    const total = shoppingCart.map(item => Number(item.price) * (item.amount / 100))
+                                .reduce((a, b) => a + b, 0);
+    // Set to 2d.p
+    return total.toFixed(2);
 } 
 
 const mapStateToProps = (reducer) => {

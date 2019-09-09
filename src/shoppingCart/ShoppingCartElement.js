@@ -53,7 +53,7 @@ const ShoppingCartElement = (props) => {
 // Then get its price with the number of units given
 const getPrice = (itemName, amount, inventory) => {
     const inventoryItem = inventory.filter(item => itemName === item.name)[0];
-    return inventoryItem.price * (amount / 100);
+    return (inventoryItem.price * (amount / 100)).toFixed(2);
 }
 
 const mapDispatchToProps = (dispatch) => {
