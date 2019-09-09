@@ -11,6 +11,13 @@ import rootReducer from './reducers/rootReducer';
 import { initialInventory } from './data/initialStoreInventory';
 import { initialShoppingCart } from './data/initialShoppingCart';
 
+import M from 'materialize-css';
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, null);
+  });
+
 const initialStoreState = {
     inventory: initialInventory,
     shoppingCart: initialShoppingCart

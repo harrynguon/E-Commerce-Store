@@ -20,7 +20,7 @@ import StrawberriesImage from './stock_photos/strawberries.jpg';
 // Grab a fruit's image from its name
 export const getImage = (fruitName) => {
     switch (fruitName) {
-        case 'Apples':
+        case 'Apples (Red)':
             return <img src={ApplesImage} width="300px" alt={fruitName} />;
         case 'Bananas':
             return <img src={BananasImage} width="300px" alt={fruitName} />;

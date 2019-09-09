@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import Item from './Item';
 import { addToCart } from '../actions/addToCart';
+import AddFruitModal from './AddFruitModal';
 
 const Home = (props) => {
   return (

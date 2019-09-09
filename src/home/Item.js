@@ -2,23 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { getImage } from '../images/imageHelper';
+import AddFruitModal from './AddFruitModal';
 
-import M from 'materialize-css';
 
-const showToast = (itemName) => {
-    M.toast(
-        {
-            html: `${itemName} have been added to your cart!`,
-            displayLength: '1500'
-        }
-    );
-}
 
 const Item = (props) => {
     // id, name, price, stockCount
-    const addToCartText = props.item.name === 'Pineapples'
-                                                ? 'Add To Cart (One Pineapple)'
-                                                : 'Add To Cart (100g)';
     return (
         <div className="col s12 m4 l4">
             <div className="card hoverable">
@@ -36,15 +25,7 @@ const Item = (props) => {
                     </div>
                 </Link>
                 <div className="card-action">
-                    <button className="btn white black-text waves-effect" 
-                            onClick={() => { 
-                                            showToast(props.item.name);
-                                            props.addToCart(props.item.name, props.item.price);
-                                        }
-                                    }
-                    >
-                        {addToCartText}
-                    </button>
+                    <AddFruitModal fruit={ props.item } addToCart={props.addToCart} />
                 </div>
             </div>
         </div>
