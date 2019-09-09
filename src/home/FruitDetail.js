@@ -16,7 +16,7 @@ const FruitDetail = (props) => {
                     <div className="divider"></div>
                     <p>are awesome.</p>
                     <Link to="/">
-                        <i className="material-icons">arrow_back</i>
+                        <i className="material-icons black-text">arrow_back</i>
                     </Link>
                 </div>
             </div>
