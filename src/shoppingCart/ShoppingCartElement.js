@@ -44,7 +44,6 @@ const ShoppingCartElement = (props) => {
                 <p>Your shopping cart is empty. </p>
             </li>
     return (
-        
         allShoppingItems
     );
 }

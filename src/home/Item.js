@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 import { getImage } from '../images/imageHelper';
 import AddFruitModal from './AddFruitModal';
 
-
-
 const Item = (props) => {
     // id, name, price, stockCount
     return (

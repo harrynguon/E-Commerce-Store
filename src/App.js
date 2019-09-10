@@ -10,7 +10,7 @@ import Checkout from './shoppingCart/Checkout';
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <div className="App">
                 <NavBar />
                 <div className="section"></div>
