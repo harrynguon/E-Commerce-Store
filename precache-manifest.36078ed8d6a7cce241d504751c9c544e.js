@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9b90e666648382e729c8177f3fdb39e1",
+    "revision": "40fc499388152eb1f3d4342dd91f6aed",
     "url": "/Organic-Fruit-Market/index.html"
   },
   {
-    "revision": "e9e1b428a9e7df354a67",
+    "revision": "7c3ab956824560550fa3",
     "url": "/Organic-Fruit-Market/static/css/main.50e0d94b.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Organic-Fruit-Market/static/js/2.01e9e188.chunk.js"
   },
   {
-    "revision": "e9e1b428a9e7df354a67",
-    "url": "/Organic-Fruit-Market/static/js/main.7a3f82bd.chunk.js"
+    "revision": "7c3ab956824560550fa3",
+    "url": "/Organic-Fruit-Market/static/js/main.d2ae4d7c.chunk.js"
   },
   {
     "revision": "f5068b8fba93c90878d1",

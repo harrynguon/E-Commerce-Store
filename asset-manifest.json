@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Organic-Fruit-Market/static/css/main.50e0d94b.chunk.css",
-    "main.js": "/Organic-Fruit-Market/static/js/main.7a3f82bd.chunk.js",
-    "main.js.map": "/Organic-Fruit-Market/static/js/main.7a3f82bd.chunk.js.map",
+    "main.js": "/Organic-Fruit-Market/static/js/main.d2ae4d7c.chunk.js",
+    "main.js.map": "/Organic-Fruit-Market/static/js/main.d2ae4d7c.chunk.js.map",
     "runtime~main.js": "/Organic-Fruit-Market/static/js/runtime~main.6a1d609e.js",
     "runtime~main.js.map": "/Organic-Fruit-Market/static/js/runtime~main.6a1d609e.js.map",
     "static/js/2.01e9e188.chunk.js": "/Organic-Fruit-Market/static/js/2.01e9e188.chunk.js",
     "static/js/2.01e9e188.chunk.js.map": "/Organic-Fruit-Market/static/js/2.01e9e188.chunk.js.map",
     "index.html": "/Organic-Fruit-Market/index.html",
-    "precache-manifest.c0e0e9d44406c2751abfa23a431f3cc8.js": "/Organic-Fruit-Market/precache-manifest.c0e0e9d44406c2751abfa23a431f3cc8.js",
+    "precache-manifest.36078ed8d6a7cce241d504751c9c544e.js": "/Organic-Fruit-Market/precache-manifest.36078ed8d6a7cce241d504751c9c544e.js",
     "service-worker.js": "/Organic-Fruit-Market/service-worker.js",
     "static/css/main.50e0d94b.chunk.css.map": "/Organic-Fruit-Market/static/css/main.50e0d94b.chunk.css.map",
     "static/media/apples.jpeg": "/Organic-Fruit-Market/static/media/apples.af65ab84.jpeg",

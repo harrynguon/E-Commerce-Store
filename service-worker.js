@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Organic-Fruit-Market/precache-manifest.c0e0e9d44406c2751abfa23a431f3cc8.js"
+  "/Organic-Fruit-Market/precache-manifest.36078ed8d6a7cce241d504751c9c544e.js"
 );
 
 self.addEventListener('message', (event) => {
