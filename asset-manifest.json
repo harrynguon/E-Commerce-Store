@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Organic-Fruit-Market/static/css/main.50e0d94b.chunk.css",
+    "main.js": "/Organic-Fruit-Market/static/js/main.7a3f82bd.chunk.js",
+    "main.js.map": "/Organic-Fruit-Market/static/js/main.7a3f82bd.chunk.js.map",
+    "runtime~main.js": "/Organic-Fruit-Market/static/js/runtime~main.6a1d609e.js",
+    "runtime~main.js.map": "/Organic-Fruit-Market/static/js/runtime~main.6a1d609e.js.map",
+    "static/js/2.01e9e188.chunk.js": "/Organic-Fruit-Market/static/js/2.01e9e188.chunk.js",
+    "static/js/2.01e9e188.chunk.js.map": "/Organic-Fruit-Market/static/js/2.01e9e188.chunk.js.map",
+    "index.html": "/Organic-Fruit-Market/index.html",
+    "precache-manifest.c0e0e9d44406c2751abfa23a431f3cc8.js": "/Organic-Fruit-Market/precache-manifest.c0e0e9d44406c2751abfa23a431f3cc8.js",
+    "service-worker.js": "/Organic-Fruit-Market/service-worker.js",
+    "static/css/main.50e0d94b.chunk.css.map": "/Organic-Fruit-Market/static/css/main.50e0d94b.chunk.css.map",
+    "static/media/apples.jpeg": "/Organic-Fruit-Market/static/media/apples.af65ab84.jpeg",
+    "static/media/bananas.jpeg": "/Organic-Fruit-Market/static/media/bananas.c6b66bc8.jpeg",
+    "static/media/blueberries.jpeg": "/Organic-Fruit-Market/static/media/blueberries.c419fb3d.jpeg",
+    "static/media/cherries.jpeg": "/Organic-Fruit-Market/static/media/cherries.e61fec91.jpeg",
+    "static/media/grapes.jpeg": "/Organic-Fruit-Market/static/media/grapes.f1aad2c7.jpeg",
+    "static/media/kiwifruit.jpeg": "/Organic-Fruit-Market/static/media/kiwifruit.2061893b.jpeg",
+    "static/media/mandarins.jpeg": "/Organic-Fruit-Market/static/media/mandarins.87f08184.jpeg",
+    "static/media/mangos.jpeg": "/Organic-Fruit-Market/static/media/mangos.9a71c66a.jpeg",
+    "static/media/mixed_apples.jpeg": "/Organic-Fruit-Market/static/media/mixed_apples.e6955e47.jpeg",
+    "static/media/mixed_berries.jpeg": "/Organic-Fruit-Market/static/media/mixed_berries.6df7de93.jpeg",
+    "static/media/oranges.jpeg": "/Organic-Fruit-Market/static/media/oranges.816a82d8.jpeg",
+    "static/media/peaches.jpeg": "/Organic-Fruit-Market/static/media/peaches.8d36a8bb.jpeg",
+    "static/media/pears.jpeg": "/Organic-Fruit-Market/static/media/pears.b5785765.jpeg",
+    "static/media/raspberries.jpg": "/Organic-Fruit-Market/static/media/raspberries.a08c791f.jpg",
+    "static/media/strawberries.jpg": "/Organic-Fruit-Market/static/media/strawberries.20e62122.jpg"
+  }
+}
